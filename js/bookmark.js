@@ -15,8 +15,12 @@ const urlInput = inputs[2];
 /* bookmark 를 추가하는것을 취소하는 버튼입니다. */
 const cancelBtn = inputs[3];
 
+let SHOW_ADDBTN = false;
+
 const bookmarkAddBtn = () => {
   if(bookMarkList.children.length >= 18) return;
+  if(SHOW_ADDBTN === true) return;
+  SHOW_ADDBTN = true;
   const li = document.createElement("li");
   const input = document.createElement("input");
   li.id = "addList";
@@ -33,6 +37,7 @@ const showTodoAddBox = (event) => {
   /* class name => js/global.js*/
   addBookMarkContainer.classList.remove(HIDDEN_CLASS_NAME);
   bookMarkList.classList.add("focus-border");
+  SHOW_ADDBTN = false;
 };
 
 const hideTodoAddBox = () => {
