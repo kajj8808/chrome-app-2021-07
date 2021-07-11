@@ -16,6 +16,7 @@ const urlInput = inputs[2];
 const cancelBtn = inputs[3];
 
 const bookmarkAddBtn = () => {
+  if(bookMarkList.children.length >= 18) return;
   const li = document.createElement("li");
   const input = document.createElement("input");
   li.id = "addList";
@@ -96,6 +97,7 @@ const deleteBookMark = (event) => {
   bookmarks = bookmarks.filter((bookmark) => bookmark.id !== Number(li.id));
   saveBookMark();
   li.remove();
+  bookmarkAddBtn(); 
 };
 
 const paintBookMark = (newBookMark) => {
