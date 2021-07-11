@@ -11,6 +11,6 @@ wallpaper.style.backgroundImage = `linear-gradient(
     transparent,
     transparent,
     transparent
-  ),url("/img/${ranImage}")`;
+  ),url("img/${ranImage}")`;
 
-//wallpaper.style.backgroundColor = "rgba(255,255,255)";
+
