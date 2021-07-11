@@ -11,6 +11,8 @@ wallpaper.style.backgroundImage = `linear-gradient(
     transparent,
     transparent,
     transparent
-  ),url("img/${ranImage}")`;
+  ),url("/img/${ranImage}")`;
 
+const resizePage = () => (wallpaper.style.height = `${document.body.scrollHeight}px`);
 
+window.addEventListener("resize", resizePage);
