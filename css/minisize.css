@@ -1,0 +1,30 @@
+@media screen and (min-width: 0px) and (max-width: 798px) {
+  #main-page {
+    position: relative;
+    text-align: center;
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 50px 100px 340px 360px 100px 100px;
+    grid-template-rows: 50px 100px 340px 360px 100px 100px;
+    grid-template-areas: "greeting greeting greeting greeting" "clock clock clock clock" "bookmark bookmark bookmark bookmark" "todo todo todo todo" "weather weather color color";
+  }
+  #main-page #bookMarkContainer {
+    display: flex;
+    justify-content: center;
+  }
+  #main-page #todo-container {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    text-align: left;
+  }
+  #main-page #weatherContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
