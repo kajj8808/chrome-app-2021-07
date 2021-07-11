@@ -7,7 +7,7 @@
   grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 100px 1fr 100px;
   grid-template-rows: 100px 1fr 100px;
-  grid-template-areas: "greeting greeting greeting greeting clock" "bookmark bookmark bookmark bookmark todo" "weather weather color color color";
+  grid-template-areas: "greeting greeting greeting greeting clock" "bookmark bookmark bookmark bookmark todo" "weather weather color null null";
 }
 #main-page #greetingContainer {
   -ms-grid-row: 1;
@@ -38,3 +38,7 @@
   -ms-grid-column-span: 2;
   grid-area: weather;
 }
+#main-page #colorContainer {
+  grid-area: color;
+}
+
