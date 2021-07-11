@@ -4,11 +4,12 @@
     text-align: center;
     -ms-grid-columns: (1fr) [4];
     grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 50px 100px 340px 360px 100px 100px;
-    grid-template-rows: 50px 100px 340px 360px 100px 100px;
+    -ms-grid-rows: 50px 100px 350px 360px 100px 100px;
+    grid-template-rows: 50px 100px 350px 360px 100px 100px;
     grid-template-areas: "greeting greeting greeting greeting" "clock clock clock clock" "bookmark bookmark bookmark bookmark" "todo todo todo todo" "weather weather color color";
   }
-  #main-page #bookMarkContainer {
+  #main-page #bookMarkContainer,
+  #main-page #greetingContainer {
     display: flex;
     justify-content: center;
   }
