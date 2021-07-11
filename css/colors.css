@@ -1,0 +1,25 @@
+#colorContainer,
+#colorContainer #color {
+  justify-content: center;
+  align-items: center;
+}
+#colorContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#colorContainer #color {
+  display: inline-flex;
+  height: 30px;
+  gap: 5px;
+}
+#colorContainer #color div {
+  width: 20px;
+  height: 20px;
+}
+#colorContainer #color span {
+  
+}
+#colorContainer #color-hex {
+  color: #fff;
+}

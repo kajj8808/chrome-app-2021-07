@@ -1,0 +1,14 @@
+#wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-animation: fadeIn 0.5s linear;
+  animation: fadeIn 0.5s linear;
+  transition: opacity 0.5s ease-in-out 0s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

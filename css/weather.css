@@ -1,0 +1,8 @@
+#weatherContainer {
+  display: flex;
+}
+#weatherContainer #weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

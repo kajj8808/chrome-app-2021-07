@@ -1,0 +1,155 @@
+#add-bookmark-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#add-bookmark-container form {
+  padding: 10px;
+  background-color: #353b48;
+  border-radius: 10px;
+}
+#add-bookmark-container form #add-bookmark-top {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+#add-bookmark-container form #add-bookmark-top h5{
+  font-size: 15px;
+  margin :0px;
+  margin-bottom: 15px;
+}
+#add-bookmark-container form #add-bookmark-top input{
+  font-weight: 600;
+}
+#add-bookmark-container form #add-bookmark-top input:hover{
+  background-color: rgba(255,255,255, 0.5);
+  border: #353b48;
+}
+#add-bookmark-container form #add-bookmark-mid {
+  display: flex;
+  flex-direction: column;
+}
+#add-bookmark-container form #add-bookmark-mid input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: #353b48;
+  width: 450px;
+  height: 30px;
+}
+#add-bookmark-container form #add-bookmark-mid span{
+  font-size: 13px;
+}
+#add-bookmark-container form #add-bookmark-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+#add-bookmark-container form #add-bookmark-bottom input{
+  border-radius: 5px;
+  border: #353b48;
+  width: 50px;
+  height: 20px;
+}
+#add-bookmark-container form #add-bookmark-bottom input:first-child{
+  margin-right: 5px;
+}
+#add-bookmark-container form #add-bookmark-top input{
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color:white;
+  background-color: #353b48;
+  border: #353b48;
+}
+
+
+#bookMarkContainer {
+  width: 100%;
+}
+#bookMarkContainer #bookMarkList {
+  padding: 0;
+  width: 480px;
+  height: 320px;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80px) [6];
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(3, 110px); 
+  list-style: none;
+  margin: 0;
+}
+#bookMarkContainer #bookMarkList:first-child{
+  padding: 10px;
+}
+#bookMarkContainer #bookMarkList .borderBox {
+  background-color: #353b48;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+}
+.borderBox:hover {
+  transition: all 0.2s ease-in-out;
+}
+#bookMarkContainer #bookMarkList #addList {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#bookMarkContainer #bookMarkList #addList input {
+  border: solid 2px #353b48;
+  padding: 33px;
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px 30px;
+}
+#bookMarkContainer #bookMarkList #addList input:hover {
+  border: solid 2px #f6f9fa;
+  transition: "all 0.2s ease-in-out";
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#bookMarkContainer #bookMarkList li {
+  position: relative;
+}
+#bookMarkContainer #bookMarkList li button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background-color: #fff;
+}
+#bookMarkContainer #bookMarkList li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  position:relative;
+}
+#bookMarkContainer #bookMarkList li a img {
+  padding: 16px;
+}
+#bookMarkContainer #bookMarkList li a span {
+  position: absolute;
+  bottom: -20px;
+  font-size: 13px;
+  width: 68px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}

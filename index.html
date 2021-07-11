@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/todo.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bookmark.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/author.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="./css/wallpaper.css" />
+    <link rel="stylesheet" href="./css/greeting.css" />
+  </head>
+  <body>
+    <div id="main-page">
+      <!---------------------- 1 ---------------------->
+      <div id="greetingContainer">
+        <!-- greeting 이름 묻고 저장 + 출력 -->
+        <form id="login-form" class="hidden">
+          <!-- form 의 경우에만 required maxlength 사용가능 -->
+          <input
+            required
+            maxlength="15"
+            type="text"
+            autocomplete="off"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="Login" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <!---------------------- 2 ---------------------->
+      <!-- clock 시계 -->
+      <div id="clockContainer">
+        <h2 id="clock">00:00:00</h2>
+      </div>
+
+      <!---------------------- 3 ---------------------->
+      <div id="bookMarkContainer">
+        <ul id="bookMarkList"></ul>
+      </div>
+      <!---------------------- 4 ---------------------->
+      <!-- todo form todo List  -->
+      <div id="todo-container">
+        <form id="todo-form">
+          <input
+            type="text"
+            autocomplete="off"
+            placeholder="Write a To Do and Press Enter!"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <!---------------------- 5 ---------------------->
+      <!-- 날씨 -->
+      <div id="weatherContainer">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!---------------------- 6 ---------------------->
+      <!-- 랜덤한 색의 이름과 hex 값을 출력! -->
+      <div id="colorContainer">
+        <div id="color">
+          <div></div>
+          <span></span>
+        </div>
+        <div id="color-hex">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 배경화면 -->
+    <div id="wallpaper"></div>
+    <div id="add-bookmark-container" class="hidden">
+      <form id="add-bookmark-form">
+        <div id="add-bookmark-top">
+          <h5>사이트 추가</h5>
+          <h5>
+            <input type="button" value="X" />
+          </h5>
+        </div>
+        <div id="add-bookmark-mid">
+          <span>이름</span>
+          <input type="text" id="title" placeholder="웹 사이트 제목" utocomplete="off" />
+          <span>URL</span>
+          <input type="text" id="url" placeholder="웹 사이트 주소" utocomplete="off" required />
+        </div>
+        <div id="add-bookmark-bottom">
+          <input type="button" id="add-bookmark-cancel" value="취소" />
+          <input type="submit" id="add-bookmark-save" value="저장" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/global.js"></script>
+  <script type="text/javascript" src="./js/weather.js"></script>
+  <script type="text/javascript" src="./js/bookmark.js"></script>
+  <script type="text/javascript" src="./js/greeting.js"></script>
+  <script type="text/javascript" src="./js/clock.js"></script>
+  <script type="text/javascript" src="./js/colors.js"></script>
+  <script type="text/javascript" src="./js/background.js"></script>
+  <script type="text/javascript" src="./js/todo.js"></script>
+</html>

@@ -1,0 +1,75 @@
+/* todo - list */
+#todo-container {
+  position: relative;
+  width: 98%;
+  height: 90%;
+  margin-right: 2%;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  color: rgba(255, 255, 255);
+  background-color: rgba(51, 54, 57, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#todo-container::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#todo-container::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#todo-container::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#todo-container #todo-form {
+  padding: 10px;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(90deg, rgba(33, 37, 41, 0.8) 0%, rgba(33, 37, 41, 0.32) 100%);
+}
+#todo-container::-webkit-scrollbar {
+  /*display: none; /* Chrome, Safari, Opera*/
+}
+#todo-form input {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 290px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+#todo-container ul {
+  top: 10px;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+#todo-container li {
+  width: 93%;
+  padding: 10px 10px 10px 10px;
+  list-style: none;
+}
+#todo-container li span {
+  width: 100%;
+  white-space: normal;
+  word-break: break-all;
+  margin-left: 10px;
+}
+#todo-container li button {
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  border :rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.65);
+  color: green;
+}
+#todo-container li:first-child {
+  padding: 0 10px 10px 10px;
+}
